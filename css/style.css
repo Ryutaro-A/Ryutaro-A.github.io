@@ -713,7 +713,7 @@ section.certification {
     width: 100%;
     margin: 0 0 0 1.5rem;
     padding: 0 10% 0 0;
-    
+
   }
   .list-wrapper2 .list1{
     font-size: 20px;
@@ -934,7 +934,7 @@ section.certification {
     width: 100%;
     margin: 0 0 0 1.5rem;
     padding: 0 10% 0 0;
-    
+
   }
   .list-wrapper2 .list1{
     font-size: 20px;
@@ -971,5 +971,11 @@ section.certification {
     width: 414px;
     margin: 0 auto;
     padding: 0 40px;
+  }
+  .mv {
+    display: block;
+  }
+  .mv-container {
+    padding: 0 0px;
   }
 }
