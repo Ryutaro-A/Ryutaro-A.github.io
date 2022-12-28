@@ -746,6 +746,17 @@ section.certification {
     height: 200px;
     border-radius:50%;
   }
+  .container {
+    width: 414px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .mv {
+    display: block;
+  }
+  .mv-container {
+    padding: 0 0px;
+  }
 }
 
 /*media Queries 767
