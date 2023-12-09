@@ -6,10 +6,11 @@ services:
       dockerfile: Dockerfile
     container_name: gatsby-my-site
     ports:
-      - "3000:3000"
+      - "8000:8000"
     volumes:
       - .:/app
     working_dir: /app
     stdin_open: true
+    # command: sh -c "cd my-gatsby-site && gatsby develop --host=0.0.0.0"
     environment:
       - NODE_ENV=development
