@@ -31,7 +31,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install xmllint
-        run: apt add --no-cache bash git yarn python3 make g++
+        run: apt install yarn
 
       - run: yarn global add gatsby-cli
       - run: npm ci
