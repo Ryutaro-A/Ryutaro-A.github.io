@@ -30,6 +30,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: Install xmllint
+        run: apt add --no-cache bash git yarn python3 make g++
+
+      - run: yarn global add gatsby-cli
       - run: npm ci
       # - run: npm run format
       # - run: npm run test
