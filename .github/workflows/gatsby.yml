@@ -27,6 +27,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - run: cd my-gatsby-site
       - run: npm ci
       - run: npm run format
       - run: npm run test
