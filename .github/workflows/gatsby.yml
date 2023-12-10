@@ -34,6 +34,8 @@ jobs:
       # - run: npm run format
       # - run: npm run test
       # - run: npm run build
+      - run: gatsby clean
+      - run: gatsby build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
