@@ -1,11 +1,12 @@
 import React from "react"
 import Header from "./header"
+import About from "./about"
 
 const HomePage = () => {
     return (
         <div>
             <Header />
-            <h1>Gatsby Blog Site</h1>
+            <About />
         </div>
     )
 }
