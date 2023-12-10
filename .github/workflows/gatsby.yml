@@ -30,8 +30,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Install xmllint
-        run: apt install yarn
+      # - name: Install xmllint
+      #   run: apt install yarn
 
       - run: yarn global add gatsby-cli
       - run: npm ci
