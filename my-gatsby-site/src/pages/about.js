@@ -59,7 +59,7 @@ const AboutPage = () => {
                             <a href="https://www.inaba.aix.uec.ac.jp/" target="_blank" rel="noopener noreferrer">Inaba Lab.</a>
                         </div>
                         <div>
-                            Email: ryu1104.as[あっと]gmail.com
+                            Email: ryu1104.as[at]gmail.com
                         </div>
                         <br />
                         <div>
