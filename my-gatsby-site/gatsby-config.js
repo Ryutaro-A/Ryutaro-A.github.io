@@ -8,5 +8,9 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
+  plugins: [
+    {
+      icon: 'src/images/profile.ico', // This path is relative to the root of the site.
+    },
+  ],
 }

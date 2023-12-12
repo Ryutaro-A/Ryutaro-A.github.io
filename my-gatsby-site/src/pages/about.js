@@ -53,7 +53,7 @@ const AboutPage = () => {
                             Ryutaro Asahara
                         </div>
                         <div>
-                            M1, The Department of Informatics, The University of Electro-Communications.
+                            M2, The Department of Informatics, The University of Electro-Communications.
                         </div>
                         <div>
                             <a href="https://www.inaba.aix.uec.ac.jp/" target="_blank" rel="noopener noreferrer">Inaba Lab.</a>
