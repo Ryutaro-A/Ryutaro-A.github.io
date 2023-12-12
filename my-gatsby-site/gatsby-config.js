@@ -10,7 +10,16 @@
 module.exports = {
   plugins: [
     {
-      icon: 'src/images/profile.ico', // This path is relative to the root of the site.
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Ryutaro Asahara",
+        short_name: "Ryutaro Asahara",
+        start_url: "/",
+        background_color: "#ffea18",
+        theme_color: "#5155c0",
+        display: "standalone",
+        icon: './src/images/profile.jpg',
+      },
     },
   ],
 }
