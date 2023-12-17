@@ -34,9 +34,11 @@
     "embla-carousel-react": "^7.1.0",
     "gatsby": "^5.12.12",
     "gatsby-plugin-manifest": "^5.12.3",
+    "mdb-react-ui-kit": "^7.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-ripples": "^2.2.1"
   },
   "repository": {
     "type": "git",
@@ -44,5 +46,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "react-scroll": "^1.9.0"
   }
 }
