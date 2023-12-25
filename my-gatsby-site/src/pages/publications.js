@@ -141,6 +141,14 @@ function PublicationPage() {
                 "Hiroki Onozeki, Zhiyang Qi, Kazuma Akiyama, Ryutaro Asahara, Takumasa Kaneko, Michimasa Inaba",
                 "This paper describes our dialogue system submitted to Dialogue Robot Competition 2023. The system’s task is to help a user at a travel agency decide on a plan for visiting two sightseeing spots in Kyoto City that satisfy the user. Our dialogue system is flexible and stable and responds to user requirements by controlling dialogue flow according to dialogue scenarios. We also improved user satisfaction by introducing motion and speech control based on system utterances and user situations. In the preliminary round, our system was ranked fifth in the impression evaluation and sixth in the plan evaluation among all 12 teams."
             )}
+            {ShowItem(
+                "https://jsai-slud.github.io/sig-slud/96th-sig.html",
+                "第13回対話システムシンポジウム",
+                "https://www.jstage.jst.go.jp/article/jsaislud/96/0/96_05/_pdf/-char/ja",
+                "事前学習済み言語モデルを用いた対話データに基づく観光地推薦",
+                "高橋 正樹, 朝原 隆太朗, 稲葉 通将",
+                "自然言語処理技術を活用した推薦システムの研究がニュース推薦やオンラインショッピングにおける商品推薦などで盛んに行われている．しかし，既存の推薦システムでは，ユーザの行動履歴が無い，もしくは少ない状態では適切な推薦を行うことができないコールドスタート問題が存在する．一方で，雑談対話には話者の嗜好に関する多様な情報が含まれている．そこで本研究では，雑談対話が与えられ，その対話をもとに対話中の話者が好む観光地を推薦するタスクを提案する．加えて，適切な推薦を行うための手法の提案およびデータの分析などについても行う．"
+            )}
         </Container>
         </section>
         <section id="award" style={{ margin: `20px 0px 50px 0px` }}>

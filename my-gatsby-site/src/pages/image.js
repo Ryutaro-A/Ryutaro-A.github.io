@@ -3,7 +3,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { isMacOS } from "@tiptap/react";
 
 const Image = (props) => (
     <StaticQuery
