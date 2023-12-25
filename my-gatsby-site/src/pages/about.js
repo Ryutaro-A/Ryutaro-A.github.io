@@ -2,6 +2,7 @@ import React from "react"
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
+// import Image from './image'
 import Row from 'react-bootstrap/Row';
 
 function ShowEducation(date, item) {
@@ -47,6 +48,7 @@ const AboutPage = () => {
                 <Row className="justify-content-md-center">
                     <Col sm={2}>
                         <Image src="profile.jpg" roundedCircle />
+                        {/* <Image filename="profile.jpg" alt="image" roundedCircle /> */}
                     </Col>
                     <Col sm={6}>
                         <div>
