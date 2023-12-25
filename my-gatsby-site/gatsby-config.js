@@ -21,5 +21,21 @@ module.exports = {
         icon: './src/images/profile.jpg',
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `./src/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-remark-external-links',
+      options: {
+        target: '_blank',
+        rel: 'noopener',
+      },
+    },
   ],
 }
