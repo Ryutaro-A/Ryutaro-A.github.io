@@ -31,15 +31,21 @@ function ShowItem(conference_url, conference_name, paper_url, paper_name, author
     )
 }
 
-const SlideStyle = {
-    marginLeft: "auto",
-    marginRight: "auto",
-    alignItems: "center",
-    width: '20rem'
-};
-
-const SlideUrl = {
-    textDecoration: <></>
+function ShowAward(conference_url, conference_name, paper_url, paper_name, authors) {
+    return (
+        <div style={{ margin: `20px 0px 20px 10px` }}>
+            <Row className="justify-content-md-center">
+                <Col sm={4}>
+                    <a href={conference_url} target="_blank" rel="noopener noreferrer">{conference_name}</a>
+                </Col>
+                <Col sm={8}>
+                    <a href={paper_url} target="_blank" rel="noopener noreferrer">{paper_name}</a>
+                    <br />
+                    <font size="2">{authors}</font>
+                </Col>
+            </Row>
+        </div>
+    )
 }
 
 
@@ -103,21 +109,21 @@ function PublicationPage() {
             </Container>
         <Container>
         <ButtonGroup variant="outlined" aria-label="outlined button group">
-            <Button>One</Button>
-            <Button>Two</Button>
-            <Button>Three</Button>
+            <Button href="#paper">Paper</Button>
+            <Button href="#award">Award</Button>
+            <Button href="#slide">Slide</Button>
         </ButtonGroup>
         </Container>
         <section id="paper">
         <Container>
-            <h2>Papers</h2>
+            <h2 style={{ margin: `20px 0px 20px 0px` }}>Papers</h2>
             {ShowItem(
                 "https://paclic2023.github.io/",
                 "The 37th Pacific Asia Conference on Language, Information and Computation (PACLIC 37)",
                 "https://paclic2023.github.io/",
                 "SumRec: A Framework for Recommendation using Open-Domain Dialogue",
                 "Ryutaro Asahara, Masaki Takahashi, Chiho Iwahashi, Michimasa Inaba",
-                "Chat dialogues contain considerable useful in- formation about a speaker’s interests, prefer- ences, and experiences. Thus, knowledge from open-domain chat dialogue can be used to personalize various systems and offer recom- mendations for advanced information. This study proposed a novel framework SumRec for recommending information from open-domain chat dialogue. The study also examined the framework using ChatRec, a newly constructed dataset for training and evaluation 1. To ex- tract the speaker and item characteristics, the SumRec framework employs a large language model (LLM) to generate a summary of the speaker information from a dialogue and to rec- ommend information about an item according to the type of user. The speaker and item infor- mation are then input into a score estimation model, generating a recommendation score. Ex- perimental results show that the SumRec frame- work provides better recommendations than the baseline method of using dialogues and item descriptions in their original form."
+                "Chat dialogues contain considerable useful information about a speaker’s interests, prefer- ences, and experiences. Thus, knowledge from open-domain chat dialogue can be used to personalize various systems and offer recommendations for advanced information. This study proposed a novel framework SumRec for recommending information from open-domain chat dialogue. The study also examined the framework using ChatRec, a newly constructed dataset for training and evaluation 1. To extract the speaker and item characteristics, the SumRec framework employs a large language model (LLM) to generate a summary of the speaker information from a dialogue and to recommend information about an item according to the type of user. The speaker and item information are then input into a score estimation model, generating a recommendation score. Experimental results show that the SumRec framework provides better recommendations than the baseline method of using dialogues and item descriptions in their original form."
             )}
             {ShowItem(
                 "https://jsai-slud.github.io/sig-slud/99th-sig.html",
@@ -127,9 +133,36 @@ function PublicationPage() {
                 "Ryutaro Asahara, Hiroki Onozeki, Kazuma Akiyama, Ryuichi Uehara, Zhiyang Qi, Takumasa Kaneko, Tomoya Higuchi, Michimasa Inaba",
                 "This paper describes a dialogue system we developed for the Situation Track of the Dialogue System Live Competition 6. The system was designed to engage in multimodal dialogue about planning a welcome party with a user. We utilized ChatGPT for generating responses and determining motions, and we crafted a specific prompt for ChatGPT. The prompt included the persona of Dr. Kobayashi, a third party who is not part of the dialogue but is the guest of honor at the party, to ensure consistent discussion about him. The prompt was also structured to produce dialogue act tags with each utterance, enabling the system to display appropriate motions based on the context. Additionally, by inserting filler words when an utterance with a negative dialogue act tag is produced, we conveyed the system’s compromise or discomfort regarding any disagreement with the user."
             )}
+            {ShowItem(
+                "https://www.alps-lab.org/drc2023/index.html",
+                "対話ロボットコンペティション2023",
+                "https://arxiv.org/pdf/2312.12808.pdf",
+                "Enhancing Consistency in Multimodal Dialogue System Using LLM with Dialogue Scenario",
+                "Hiroki Onozeki, Zhiyang Qi, Kazuma Akiyama, Ryutaro Asahara, Takumasa Kaneko, Michimasa Inaba",
+                "This paper describes our dialogue system submitted to Dialogue Robot Competition 2023. The system’s task is to help a user at a travel agency decide on a plan for visiting two sightseeing spots in Kyoto City that satisfy the user. Our dialogue system is flexible and stable and responds to user requirements by controlling dialogue flow according to dialogue scenarios. We also improved user satisfaction by introducing motion and speech control based on system utterances and user situations. In the preliminary round, our system was ranked fifth in the impression evaluation and sixth in the plan evaluation among all 12 teams."
+            )}
         </Container>
         </section>
-        <section id="slide">
+        <section id="award" style={{ margin: `20px 0px 50px 0px` }}>
+            <Container>
+                <h2>Award</h2>
+                {ShowAward(
+                    "https://sites.google.com/view/dslc6",
+                    "対話システムライブコンペティション6",
+                    "https://www.uec.ac.jp/news/prize/2023/20231221_5876.html",
+                    "優秀賞",
+                    "朝原 隆太朗、小野関 宏己、斉 志揚、金子 拓正、秋山 一馬、上原 隆一、樋口 智哉、稲葉 通将",
+                )}
+                {ShowAward(
+                    "https://www.alps-lab.org/drc2023/index.html",
+                    "対話ロボットコンペティション2023",
+                    "https://www.alps-lab.org/drc2023/index.html",
+                    "入賞",
+                    "Hiroki Onozeki, Zhiyang Qi, Kazuma Akiyama, Ryutaro Asahara, Takumasa Kaneko, Michimasa Inaba",
+                )}
+            </Container>
+        </section>
+        <section id="slide" style={{ margin: `20px 0px 50px 0px` }}>
         <Container>
             <h2>Slides</h2>
             <Slides items={ items }/>
