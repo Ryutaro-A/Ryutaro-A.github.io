@@ -15,7 +15,7 @@ const BasicCard = (props) => {
         // <Card sx={{ width: 320 }} >
         <Card sx>
         <div>
-            <Typography level="title-lg">{ props.title }</Typography>
+            <Link to={ props.slide_url } target="_blank"><Typography level="title-lg">{ props.title }</Typography></Link>
             <IconButton
             aria-label="bookmark Bahamas Islands"
             variant="plain"
@@ -34,7 +34,7 @@ const BasicCard = (props) => {
                 { props.description }
             </Typography>
             </div>
-            <Button
+            {/* <Button
             variant="secondary"
             size="md"
             color="primary"
@@ -45,7 +45,7 @@ const BasicCard = (props) => {
             target="_blank"
             >
             more
-            </Button>
+            </Button> */}
         </CardContent>
         </Card>
     );

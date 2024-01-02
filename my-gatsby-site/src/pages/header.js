@@ -10,6 +10,7 @@ const Header = () => {
                 <Nav className="justify-content-between">
                     <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="/publications">Publications</Nav.Link>
+                    <Nav.Link href="/blog">Blog</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>
