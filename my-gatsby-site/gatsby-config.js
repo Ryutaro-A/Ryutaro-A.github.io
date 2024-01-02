@@ -31,11 +31,20 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `./src/markdown`,
+      },
+    },
+    {
       resolve: 'gatsby-remark-external-links',
       options: {
         target: '_blank',
         rel: 'noopener',
       },
     },
+    `gatsby-transformer-remark`,
+    `github-markdown-css`,
   ],
 }
