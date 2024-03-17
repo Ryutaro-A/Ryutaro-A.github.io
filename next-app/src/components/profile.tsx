@@ -8,23 +8,24 @@ import Link from 'next/link'
 
 const Profile = () => {
 
+    const logo_size = 100;
+    const profile_image_size = 230;
+
     return (
-    <Grid container spacing={2}>
-        <Grid item xs={5}>
+    <div className="md:flex flex-row">
+        <div className="basis-1/2">
             <div className="flex justify-center items-center">
             <Image
-                className="rounded-full w-100 h-100 object-cover"
+                className="rounded-full w-130 h-130 object-cover"
                 src="/static/profile.jpg"
-                width={180}
-                height={180}
+                width={profile_image_size}
+                height={profile_image_size}
                 alt="Ryutaro Asahara's profile image"
             />
             </div>
-        </Grid>
-        <Grid item xs={5}>
-            <div className="text-3xl">
-                Ryutaro Asahara
-            </div>
+        </div>
+        <div className="basis-1/2 text-center mt-9 md:text-left">
+            <div className="text-3xl">Ryutaro Asahara</div>
             <div>
                 M2, The Department of Informatics, The University of Electro-Communications.
             </div>
@@ -35,25 +36,54 @@ const Profile = () => {
                 Email: ryu1104.as[at]gmail.com
             </div>
             <br />
-            <div>
-                {/* <a href="https://github.com/Ryutaro-A" target="_blank" rel="noopener noreferrer">Github</a> */}
-                <Link href="https://example.com" passHref>
-                    {/* <a> */}
-                    <img
-                    className="rounded w-20 h-20"
-                    src="/static/github-mark.png"
-                    width={20}
-                    height={20}
-                    alt="Ryutaro Asahara's profile image"
-                    />
-                    {/* </a> */}
-                </Link>
+            <div className="flex flex-row ">
+                <div className="basis-1/4">
+                    <a className="inline-block" href="https://github.com/Ryutaro-A" target="_blank" rel="noopener noreferrer">
+                        <Image
+                        className="rounded w-10 h-10"
+                        src="/static/github-mark.png"
+                        width={logo_size}
+                        height={logo_size}
+                        alt="Ryutaro Asahara's profile image"
+                        />
+                    </a>
+                </div>
+                <div className="basis-1/4">
+                    <Link className="inline-block" href="https://x.com/Ryu_pro_m" target="_blank" rel="noopener noreferrer">
+                        <Image
+                            className="rounded w-10 h-10"
+                            src="/static/x-logo.png"
+                            width={logo_size}
+                            height={logo_size}
+                            alt="Ryutaro Asahara's profile image"
+                        />
+                    </Link>
+                </div>
+                <div className="basis-1/4">
+                    <Link className="inline-block" href="https://qiita.com/ryu1104" target="_blank" rel="noopener noreferrer">
+                        <Image
+                            className="rounded w-10 h-10"
+                            src="/static/qiita-logo.png"
+                            width={logo_size}
+                            height={logo_size}
+                            alt="Ryutaro Asahara's profile image"
+                        />
+                    </Link>
+                </div>
+                <div className="basis-1/4">
+                    <Link className="inline-block" href="https://scholar.google.com/citations?user=PG5UIoAAAAAJ&hl=ja&oi=sra" target="_blank" rel="noopener noreferrer">
+                        <Image
+                            className="rounded w-10 h-10"
+                            src="/static/glsr-logo.png"
+                            width={logo_size}
+                            height={logo_size}
+                            alt="Ryutaro Asahara's profile image"
+                        />
+                    </Link>
+                </div>
             </div>
-            <div>
-                <a href="https://twitter.com/Ryu_pro_m" target="_blank" rel="noopener noreferrer">Twitter</a>
-            </div>
-        </Grid>
-    </Grid>
+        </div>
+    </div>
     )
 }
 
