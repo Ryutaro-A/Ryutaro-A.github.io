@@ -41,7 +41,7 @@ const Profile = () => {
                     <a className="inline-block" href="https://github.com/Ryutaro-A" target="_blank" rel="noopener noreferrer">
                         <Image
                         className="rounded w-10 h-10"
-                        src="/static/github-mark.png"
+                        src="/github-mark.png"
                         width={logo_size}
                         height={logo_size}
                         alt="Ryutaro Asahara's profile image"
@@ -52,7 +52,7 @@ const Profile = () => {
                     <Link className="inline-block" href="https://x.com/Ryu_pro_m" target="_blank" rel="noopener noreferrer">
                         <Image
                             className="rounded w-10 h-10"
-                            src="/static/x-logo.png"
+                            src="/x-logo.png"
                             width={logo_size}
                             height={logo_size}
                             alt="Ryutaro Asahara's profile image"
@@ -63,7 +63,7 @@ const Profile = () => {
                     <Link className="inline-block" href="https://qiita.com/ryu1104" target="_blank" rel="noopener noreferrer">
                         <Image
                             className="rounded w-10 h-10"
-                            src="/static/qiita-logo.png"
+                            src="/qiita-logo.png"
                             width={logo_size}
                             height={logo_size}
                             alt="Ryutaro Asahara's profile image"
@@ -74,7 +74,7 @@ const Profile = () => {
                     <Link className="inline-block" href="https://scholar.google.com/citations?user=PG5UIoAAAAAJ&hl=ja&oi=sra" target="_blank" rel="noopener noreferrer">
                         <Image
                             className="rounded w-10 h-10"
-                            src="/static/glsr-logo.png"
+                            src="/glsr-logo.png"
                             width={logo_size}
                             height={logo_size}
                             alt="Ryutaro Asahara's profile image"
