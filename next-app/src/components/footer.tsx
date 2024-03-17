@@ -1,5 +1,6 @@
 import React from "react"
 import Link from 'next/link'
+import Container from '@mui/material/Container';
 
 
 const Footer = () => {
@@ -9,8 +10,9 @@ const Footer = () => {
         { id: 3, href: "/blog", label: "Blog" },
     ];
     return (
-    <footer className="bg-white rounded-lg shadow m-4">
-        <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <Container className="max-w-screen-xl">
+    <footer className="bg-white rounded-lg shadow m-4 max-w-screen-xl">
+        <div className="w-full mx-auto max-w-screen-xl p-4 items-center justify-between md:flex md:items-center md:justify-between">
             <span className="text-sm text-gray-500 sm:text-center"> <a href="https://flowbite.com/" className="hover:underline">Ryutaro Asahara</a>. All Rights Reserved.
         </span>
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 sm:mt-0">
@@ -22,6 +24,7 @@ const Footer = () => {
         </ul>
         </div>
     </footer>
+    </Container>
     )
 }
 
