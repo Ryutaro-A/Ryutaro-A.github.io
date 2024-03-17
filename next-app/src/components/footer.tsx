@@ -7,7 +7,7 @@ const Footer = () => {
     const links = [
         { id: 1, href: "/", label: "About" },
         { id: 2, href: "/publications", label: "Publications"},
-        { id: 3, href: "/blog", label: "Blog" },
+        { id: 3, href: "/slides", label: "Slides" },
     ];
     return (
         <Container className="max-w-screen-xl">
