@@ -34,7 +34,7 @@ function showSlides(status: string) {
         { id:5, name: "MCP:Self supervised Pre training for Personalized Chatbots with Multi level Contrastive Sampling", url: "https://speakerdeck.com/ryu1104/lun-wen-shao-jie-mcp-self-supervised-pre-training-for-personalized-chatbots-with-multi-level-contrastive-sampling", imgPath: "/mcp.png", desc: "[EMNLP2022] 対照学習を用いて効果的なパーソナライズ対話手法を提案した論文"},
         { id:6, name: "Learning to Express in Knowledge- Grounded Conversation", url: "https://speakerdeck.com/ryu1104/lun-wen-shao-jie-learning-to-express-in-knowledge-grounded-conversation", imgPath: "/learning_to_express.png", desc: "[NAACL2022] 知識対話において潜在変数を用いることで多様な応答を生成するための手法を提案した論文"},
         { id:7, name: "Other Roles Matter! Enhancing Role-Oriented Dialogue Summarization via Role Interactions", url: "hhttps://speakerdeck.com/ryu1104/lun-wen-shao-jie-other-roles-matter-enhancing-role-oriented-dialogue-summarization-via-role-interactions", imgPath: "/other_role.png", desc: "[ACL2022] 話者ごとの対話要約を生成する手法を提案した論文"},
-        { id:8, name: "Coreference-Aware Dialogue Summarization", url: "https://speakerdeck.com/ryu1104/lun-wen-shao-jie-coreference-aware-dialogue-summarization", imgPath: "/Coreference-Aware Dialogue Summarization.png", desc: "[SIGDIAL2021] 効果的なAttentionの適用によって共参照を考慮した要約生成手法を提案した論文"},
+        { id:8, name: "Coreference-Aware Dialogue Summarization", url: "https://speakerdeck.com/ryu1104/lun-wen-shao-jie-coreference-aware-dialogue-summarization", imgPath: "/Coreference-Aware.png", desc: "[SIGDIAL2021] 効果的なAttentionの適用によって共参照を考慮した要約生成手法を提案した論文"},
     ];
     if (status === "学会発表") {
         return (
