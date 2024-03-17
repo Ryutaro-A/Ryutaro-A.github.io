@@ -17,7 +17,7 @@ const Profile = () => {
             <div className="flex justify-center items-center">
             <Image
                 className="rounded-full w-130 h-130 object-cover"
-                src="/static/profile.jpg"
+                src="/profile.jpg"
                 width={profile_image_size}
                 height={profile_image_size}
                 alt="Ryutaro Asahara's profile image"
