@@ -9,8 +9,8 @@ const Header = () => {
 
     const pathname = usePathname();
     const links = [
-        { href: "/", label: "About" },
-        { href: "/publications", label: "Publications"},
+        { id: 1, href: "/", label: "About" },
+        { id: 2, href: "/publications", label: "Publications"},
         // { href: "/blog", label: "Blog" },
     ];
 
@@ -30,8 +30,8 @@ const Header = () => {
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
-        {links.map(({ href, label }) => (
-            <li>
+        {links.map(({ id, href, label }) => (
+            <li key={ id }>
             <Link href={ href } className="block py-2 px-3 text-black rounded md:bg-transparent md:p-0" legacyBehavior>
             <a
                 className={
