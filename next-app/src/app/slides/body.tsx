@@ -73,7 +73,7 @@ function showSlides(status: string) {
                     width={500}
                     height={500}
                 />
-                <div className="px-5 py-4 object-cover lg:h-44 md:h-36">
+                <div className="px-5 py-4 sm:object-cover lg:h-72 md:h-72 sm:h-72">
                     <div className="font-bold text-xl mb-2">{ name }</div>
                     <p className="text-gray-700 text-base">
                         { desc }
