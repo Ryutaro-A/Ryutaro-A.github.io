@@ -38,18 +38,18 @@ function showSlides(status: string) {
     ];
     if (status === "学会発表") {
         return (
-        <div className="grid grid-cols-3 gap-4 mt-10">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-10">
             {conferences.map(({ id, name, url, imgPath, desc}) => (
             <Link key={ id } href={ url } target="_blank" rel="noopener noreferrer">
             <div className="max-w-xl rounded overflow-hidden shadow-lg transition-transform duration-300 transform hover:scale-110">
                 <Image
-                    className="object-cover h-48 w-96"
+                    className="object-cover h-64 w-128"
                     src={ imgPath }
                     alt={ name }
                     width={500}
                     height={500}
                 />
-                <div className="px-5 py-4 object-cover h-36">
+                <div className="px-5 py-4 object-cover lg:h-44 md:h-36">
                     <div className="font-bold text-xl mb-2">{ name }</div>
                     <p className="text-gray-700 text-base">
                         { desc }
@@ -62,18 +62,18 @@ function showSlides(status: string) {
         )
     } else if (status === "論文紹介") {
         return (
-            <div className="grid grid-cols-3 gap-4 mt-10">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-10">
             {introductions.map(({ id, name, url, imgPath, desc}) => (
             <Link key={ id } href={ url } target="_blank" rel="noopener noreferrer">
             <div className="max-w-xl rounded overflow-hidden shadow-lg transition-transform duration-300 transform hover:scale-110">
                 <Image
-                    className="object-cover h-48 w-96"
+                    className="object-cover h-64 w-128"
                     src={ imgPath }
                     alt={ name }
                     width={500}
                     height={500}
                 />
-                <div className="px-5 py-4 object-cover h-56">
+                <div className="px-5 py-4 object-cover lg:h-44 md:h-36">
                     <div className="font-bold text-xl mb-2">{ name }</div>
                     <p className="text-gray-700 text-base">
                         { desc }
@@ -114,7 +114,7 @@ const SlidesBody = () => {
 
     return (
         <Container className="mt-10 max-w-8xl justify-center items-center">
-        <ul className="hidden text-sm font-medium text-center text-gray-500 rounded-lg shadow sm:flex">
+        <ul className="text-sm font-medium text-center text-gray-500 rounded-lg shadow flex">
             <li className="w-full focus-within:z-10">
                 <button
                 key="学会発表"
