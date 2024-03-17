@@ -23,14 +23,13 @@ const PublicationsBody = () => {
             {papers.map(({ id, conferenceName, conferenceURL, paperName, paperURL, author }) => (
                 <div key={ id } className="md:flex flex-row mt-4">
                     <div className="basis-1/3">
-                        {/* <Link className="text-lg" href={ conferenceURL } target="_blank" rel="noopener noreferrer"> */}
                         <div className="text-neutral-600">{ conferenceName }</div>
                     </div>
                     <div className="basis-2/3">
                         <Link className="text-lg text-blue-600 active:text-blue-600 hover:text-blue-800" href={ paperURL } target="_blank" rel="noopener noreferrer" text-3xl>
                             { paperName }
                         </Link>
-                        <div className="mb-3 text-neutral-500">
+                        <div className="sm:mb-3 text-neutral-500 mb-10">
                             { author }
                         </div>
                     </div>
@@ -48,7 +47,7 @@ const PublicationsBody = () => {
                         <div className="text-lg font-bold">
                             { result }
                         </div>
-                        <div className="mb-3 text-neutral-500">
+                        <div className="sm:mb-3 text-neutral-500 mb-10">
                             { author }
                         </div>
                     </div>
