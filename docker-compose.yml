@@ -1,16 +1,13 @@
-version: "3.7"
+version: '3'
+
 services:
-  gatsby-my-site:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: gatsby-my-site
+  next-app:
+    build: .
+    container_name: next-blog
+    # command: sh -c "npm run dev"
     ports:
-      - "8000:8000"
+      - "3000:3000"
     volumes:
-      - .:/app
-    working_dir: /app
+      - ./next-app:/app
     stdin_open: true
-    # command: sh -c "cd my-gatsby-site && gatsby develop --host=0.0.0.0"
-    environment:
-      - NODE_ENV=development
+    tty: true
