@@ -7,11 +7,11 @@ import React, { useState } from 'react';
 
 const Header = () => {
 
-    const pathname = usePathname();
     const links = [
         { id: 1, href: "/", label: "About" },
         { id: 2, href: "/publications", label: "Publications"},
         { id: 3, href: "/slides", label: "Slides" },
+        { id: 4, href: "/blog", label: "Blog" },
     ];
 
     const [openMenu, setOpenMenu] = useState(false);

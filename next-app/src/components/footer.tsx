@@ -11,7 +11,7 @@ const Footer = () => {
     ];
     return (
         <Container className="max-w-screen-xl">
-    <footer className="bg-white rounded-lg shadow m-4 max-w-screen-xl">
+    <footer className="bg-white rounded-lg shadow m-4">
         <div className="w-full mx-auto max-w-screen-xl p-4 items-center justify-between md:flex md:items-center md:justify-between">
             <span className="text-sm text-gray-500 sm:text-center"> <a href="https://flowbite.com/" className="hover:underline">Ryutaro Asahara</a>. All Rights Reserved.
         </span>
