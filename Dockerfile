@@ -1,2 +1,4 @@
 FROM node:18-alpine
 WORKDIR /app
+
+ARG NEXT_PUBLIC_BASEURL

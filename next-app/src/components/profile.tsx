@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react"
+
 import Image from 'next/image'
 import Grid from '@mui/material/Grid';
 import Link from 'next/link'
@@ -33,7 +33,7 @@ const Profile = () => {
                 <a href="https://www.inaba.aix.uec.ac.jp/" target="_blank" rel="noopener noreferrer">Inaba Lab.</a>
             </div>
             <div>
-                Email: ryu1104.as[at]gmail.com
+                Email: ryu.pro1000[at]gmail.com
             </div>
             <br />
             <div className="flex flex-row ">

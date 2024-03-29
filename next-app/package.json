@@ -16,6 +16,7 @@
     "@mui/icons-material": "^5.15.13",
     "@mui/material": "^5.15.13",
     "@nextui-org/react": "^2.2.10",
+    "@supabase/supabase-js": "^2.39.8",
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.0.15",
     "gray-matter": "^4.0.3",
@@ -30,6 +31,7 @@
     "remark-html": "^16.0.1",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.0",
+    "swr": "^2.2.5",
     "unified": "^11.0.4"
   },
   "devDependencies": {
