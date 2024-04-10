@@ -8,7 +8,8 @@ const Resume = () => {
     ];
 
     const experiences = [
-        { id: 1, date: "2022", enName: "Rakuten Group, Inc., Application Engineer Intern.", jpName: "楽天グループ株式会社 インターン アプリケーションエンジニア　　　　　　　　　　　　　　　　　　　　　"},
+        { id: 1, date: "2024/04 - ", enName: "ZOZO Inc. Engineer", jpName: "株式会社ZOZO エンジニア" },
+        { id: 2, date: "2022", enName: "Rakuten Group, Inc., Application Engineer Intern.", jpName: "楽天グループ株式会社 インターン アプリケーションエンジニア　　　　　　　　　　　　　　　　　　　　　"},
     ];
 
     return (
