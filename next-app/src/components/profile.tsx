@@ -2,7 +2,6 @@
 
 import React from "react"
 import Image from 'next/image'
-import Grid from '@mui/material/Grid';
 import Link from 'next/link'
 
 
@@ -27,10 +26,7 @@ const Profile = () => {
         <div className="basis-1/2 text-center mt-9 md:text-left">
             <div className="text-3xl">Ryutaro Asahara</div>
             <div>
-                M2, The Department of Informatics, The University of Electro-Communications.
-            </div>
-            <div>
-                <a href="https://www.inaba.aix.uec.ac.jp/" target="_blank" rel="noopener noreferrer">Inaba Lab.</a>
+                Engineer ZOZO Inc.
             </div>
             <div>
                 Email: ryu.pro1000[at]gmail.com
