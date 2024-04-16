@@ -56,7 +56,7 @@ const Profile = () => {
                     </Link>
                 </div>
                 <div className="basis-1/4">
-                    <Link className="inline-block" href="https://qiita.com/ryu1104" target="_blank" rel="noopener noreferrer">
+                    <Link className="inline-block" href="https://qiita.com/ryu_pro1000" target="_blank" rel="noopener noreferrer">
                         <Image
                             className="rounded w-10 h-10"
                             src="/qiita-logo.png"
